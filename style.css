@@ -68,7 +68,16 @@ body{
     padding: 10px;
 }
 .botones{
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0rem;
+
+    position: absolute;
+    width: 6.8rem;
+    height: 6.8rem;
+    left: 8%;
+    top: 44rem;
 }
 .botonEncriptar{
     padding: 24px;
@@ -103,6 +112,10 @@ body{
     flex-grow: 1;
     justify-content: center;
 }
+.botonEncriptar:hover{
+    background: #052051;
+    transform: scale(1);
+}
 
 .botonDesencriptar{
     display: flex;
@@ -127,10 +140,16 @@ body{
 
 }
 .botonDesencriptar{
+    margin: 0rem 2.4rem;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
+.botonDesencriptar:hover{
+    background: #E9ECF8;
+    transform: scale(1);
 }
